@@ -1,0 +1,28 @@
+/* scroll smoothness */
+html{
+    scroll-behavior: smooth;
+    background-color: black;
+    color: white;
+}
+/* header and logo */
+.site-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width:100%;
+}
+.logo{
+    width:150px;
+    align-items: center;
+}
+.imaag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.pic{
+    width:500px;
+    height: auto;
+}

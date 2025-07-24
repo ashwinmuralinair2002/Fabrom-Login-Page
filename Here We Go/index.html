@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Here We Go</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+    <!-- header section -->
+    <header class="site-top container-fluid py-2">
+  <div class="d-flex align-items-center justify-content-between position-relative w-100">
+    
+    <!-- Logo centered -->
+    <div class="position-absolute top-50 start-50 translate-middle">
+      <img src="./Logo.jpg" alt="logo" class="logo">
+    </div>
+
+    <!-- Logout button on the right -->
+    <div class="ms-auto">
+      <button class="btn btn-danger" onclick="logout()">Logout</button>
+    </div>
+    
+  </div>
+</header>
+
+
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#football-news">Football News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#transfers">Transfer News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ranking">Player Rankings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- football news section -->
+    <section id="football-news" class="py-5 bg-black text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Football News</h2>
+            <div class="overflow-x-auto" style="white-space: nowrap;" >
+                <div class="d-flex flex-nowrap gap-4 px-2" style="min-width: max-content;">
+                    <!-- image 1 -->
+                     <div class="text-center">
+                        <a href="./html sheets/luka.html">
+                            <img src="./images/bye luka.jpg" class="img-fluid rounded mb-2" alt="luka modric" style="width: 300px; height: 300px;">
+                        </a>
+                        <p class="fw-semibold">Good Bye Luka Modrić</p>
+                     </div>
+                     <!-- image 2 -->
+                     <div class="text-center">
+                        <a href="./html sheets/muller.html">
+                            <img src="./images/muller.jpg" class="img-fluid rounded mb-2" alt="Thomas Muller" style="width: 300px; height: 300px;">
+                        </a>
+                        <p class="fw-semibold">Muller Bids Farewell</p>
+                     </div>
+                     <!-- image 3 -->
+                     <div class="text-center">
+                        <a href="./html sheets/barca.html">
+                            <img src="./images/barca la liga.jpg" class="img-fluid rounded mb-2" alt="La Liga" style="width: 300px; height: 300px;">
+                        </a>
+                        <p class="fw-semibold">FC Barcelona Wins La Liga</p>
+                     </div>
+                     <!-- image 4 -->
+                     <div class="text-center">
+                        <a href="./html sheets/napoli.html">
+                            <img src="./images/napoli.jpg" class="img-fluid rounded mb-2" alt="napoli" style="width: 300px; height: 300px;">
+                        </a>
+                        <p class="fw-semibold">Napoli Wins the Scudetto</p>
+                     </div>
+                
+                     <!-- image 5 -->
+                     <div class="text-center">
+                        <a href="./html sheets/spurs.html">
+                            <img src="./images/spurs europa.jpg" class="img-fluid rounded mb-2" alt="spurs" style="width: 300px; height: 300px;">
+                        </a>
+                        <p class="fw-semibold">Spurs Win the Europa League</p>
+                     </div>
+                     <!-- image 6 -->
+                     <div class="text-center">
+                        <a href="./html sheets/galatasaray.html">
+                            <img src="./images/Galatasaray.jpg" class="img-fluid rounded mb-2" alt="Turkish League" style="width: 300px; height: 300px;">
+                        </a>
+                        <p class="fw-semibold">Galatasaray S.K Wins the Turkish League</p>
+                     </div>
+                     <!-- image 7 -->
+                     <div class="text-center">
+                        <a href="./html sheets/mbappe.html">
+                            <img src="./images/mbappe.jpg" class="img-fluid rounded mb-2" alt="Mbappe" style="width: 300px; height: 300px;">
+                        </a>
+                        <p class="fw-semibold">Pichichi Trophy Race</p>
+                     </div>
+                     <!-- image  8 -->
+                     <div class="text-center">
+                        <a href="./html sheets/city.html">
+                            <img src="./images/city match.jpg" class="img-fluid rounded mb-2" alt="Manchester City" style="width: 300px; height: 300px;">
+                        </a>
+                        <p class="fw-semibold">Manchester City Wins</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="transfers" class="py-5 bg-black text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Transfer News</h2>
+            <div class="row g-4">
+                <!-- article 1 -->
+                 <div class="col-md-6">
+                    <div class="border p-3 h-100">
+                        <h4 class="fw-bold text-white" >Álvaro Carreras To Real Mdrid CF</h4>
+                        <img src="./transfers/images/alvaro carreras.jpg" class="img-fluid rounded mb-3">
+                        <p class="text-white">Álvaro Carreras Signs a 5 year deal with Real Madrid. Deal set to be signed with Benfica for a fee of 50m euros</p>
+                        <a href="./transfers/html sheets/alvaro.html" class="btn btn-sm text-white btn-outline-dark">Read More</a>
+                    </div>
+                 </div>
+                 <!-- article 2 -->
+                 <div class="col-md-6">
+                    <div class="border p-3 h-100">
+                        <h4 class="fw-bold">Ansu Fati to Monaco - Deal Almost Done</h4>
+                        <img src="./transfers/images/ansu fati.jpg" class="img-fluid rounded mb-3">
+                        <p class="text-white"> Negotiations are at the final stage as Monaco close in on Barcelona's Ansu Fati.</p>
+                        <a href="./transfers/html sheets/ansu-fati.html" class="btn btn-sm text-white btn-outline-dark">Read More</a>
+                    </div>
+                 </div>
+                 <!-- article 3 -->
+                 <div class="col-md-6">
+                    <div class="border p-3 h-100">
+                        <h4 class="fw-bold">Man United Interested in Matheus Cunha</h4>
+                        <img src="./transfers/images/cunha.jpg" class="img-fluid rounded mb-3">
+                        <p class="text-white">Manchester United are exploring a move for Wolves’ Brazilian forward Matheus Cunha.</p>
+                        <a href="./transfers/html sheets/cunha.html" class="btn text-white btn-sm btn-outline-dark">Read More</a>
+                    </div>
+                 </div>
+                 <!-- article 4 -->
+                 <div class="col-md-6">
+                    <div class="border p-3 h-100">
+                        <h4 class="fw-bold">Chelsea Not Selling Enzo Amid Real Madrid Links</h4>
+                        <img src="./transfers/images/enzo.jpg" class="img-fluid rounded mb-3">
+                        <p class="text-white">Despite interest from Madrid, Chelsea have no intention of letting Enzo Fernandes go.</p>
+                        <a href="./transfers/html sheets/enzo.html" class="btn text-white btn-sm btn-outline-dark">Read More</a>
+                    </div>
+                 </div>
+                 <!-- article 5 -->
+                 <div class="col-md-6">
+                    <div class="border p-3 h-100">
+                        <h4 class="fw-bold">Real Madrid Target Nico Williams</h4>
+                        <img src="./transfers/images/nico.jpg" class="img-fluid rounded mb-3">
+                        <p class="text-white">Los Blancos are keen on signing the Athletic Bilbao winger this summer.</p>
+                        <a href="./transfers/html sheets/nico.html" class="btn text-white btn-sm btn-outline-dark">Read More</a>
+                    </div>
+                 </div>
+                 <!-- article 6 -->
+                 <div class="col-md-6">
+                    <div class="border p-3 h-100">
+                        <h4 class="fw-bold">Jonathan Tah to Bayern – Deal Done</h4>
+                        <img src="./transfers/images/tah.jpg" class="img-fluid rounded mb-3">
+                        <p class="text-white">Bayern Munich have completed the signing of defender Jonathan Tah from Leverkusen</p>
+                        <a href="./transfers/html sheets/tah.html" class="btn text-white btn-sm btn-outline-dark">Read More</a>
+                    </div>
+                 </div>
+                 <!-- article 7 -->
+                 <div class="col-md-6">
+                    <div class="border p-3 h-100">
+                        <h4 class="fw-bold">Leverkusen Eye Ten Hag as Alonso Replacement</h4>
+                        <img src="./transfers/images/ten hag.jpg" class="img-fluid rounded mb-3">
+                        <p class="text-white">With Xabi Alonso set to leave, Leverkusen are considering Erik ten Hag for the managerial role.</p>
+                        <a href="./transfers/html sheets/ten-hag.html" class="btn text-white btn-sm btn-outline-dark">Read More</a>
+                    </div>
+                 </div>
+                 <!-- article 8 -->
+                 <div class="col-md-6">
+                    <div class="border p-3 h-100">
+                        <h4 class="fw-bold">Florian Wirtz Likely Heading to Liverpool</h4>
+                        <img src="./transfers/images/wirtz.jpg" class="img-fluid rounded mb-3">
+                        <p class="text-white">Liverpool have joined the race and agreed personal terms with Wirtz, making them front-runners for the transfer.</p>
+                        <a href="./transfers/html sheets/wirtz.html" class="btn text-white btn-sm btn-outline-dark">Read More</a>
+                    </div>
+                 </div>
+
+
+                 <!-- articles end -->
+
+            </div>
+        </div>
+    </section>
+    <!-- ranking -->
+    <section id="ranking" class="py-5 bg-black text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Player and Club Ranking</h2>
+            <div id="rankingCarousel" class="carousel slide" data-bs-ride="caroussel">
+                <div class="carousel-inner">
+                    <!-- clubs -->
+                     <div class="carousel-item active">
+                        <div class="card mx-auto bg-secondary text-white"style="width:22rem;" >
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Top 5 clubs</h5>
+                                <ul class="list-group list-group-flush">
+                                <!-- club begins -->
+                                 <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">1.</span>
+                                    <img src="../Here We Go/rankings/clubs/psg.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Paris Saint-Germain
+                                 </li>
+                                 <!-- club ends -->
+                                  <!-- club begins -->
+                                 <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">2.</span>
+                                    <img src="../Here We Go/rankings/clubs/barca.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    FC Barcelona
+                                 </li>
+                                 <!-- club ends -->
+                                  <!-- club begins -->
+                                 <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">3.</span>
+                                    <img src="../Here We Go/rankings/clubs/liverpool.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Liverpool FC
+                                 </li>
+                                 <!-- club ends -->
+                                  <!-- club begins -->
+                                 <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">4.</span>
+                                    <img src="../Here We Go/rankings/clubs/inter.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    FC Internazionale Milano.
+                                 </li>
+                                 <!-- club ends -->
+                                  <!-- club begins -->
+                                 <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">1.</span>
+                                    <img src="../Here We Go/rankings/clubs/Arsenal.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Arsenal FC
+                                 </li>
+                                 <!-- club ends -->
+                                </ul>
+                            </div>
+                        </div>
+                     </div>
+                    <div class="carousel-item">
+                        <div class="card mx-auto bg-secondary text-white" style="width:22rem;">
+                            <div class="card-body">
+                                <h5 class="card-title txt-center">Top 5 Forwards</h5>
+                                <ul class="list-group list group-flush">
+                                    <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">1.</span>
+                                    <img src="../Here We Go/rankings/clubs/psg.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Ousmane Dembélé
+                                    </li>
+                                    <!-- player end -->
+                                     <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">2.</span>
+                                    <img src="../Here We Go/rankings/clubs/barca.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Rapinha
+                                    </li>
+                                    <!-- player end -->
+                                     <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">3.</span>
+                                    <img src="../Here We Go/rankings/clubs/real.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Kylian Mbappé
+                                    </li>
+                                    <!-- player end -->
+                                     <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">4.</span>
+                                    <img src="../Here We Go/rankings/clubs/barca.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Lamine Yamal
+                                    </li>
+                                    <!-- player end -->
+                                     <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">5.</span>
+                                    <img src="../Here We Go/rankings/clubs/liverpool.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Mohamed Salah
+                                    </li>
+                                    <!-- player end -->
+
+                                 
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- midfield begins -->
+                    <div class="carousel-item">
+                        <div class="card mx-auto bg-secondary text-white" style="width:22rem;">
+                            <div class="card-body">
+                                <h5 class="card-title txt-center">Top 5 Midfielders</h5>
+                                <ul class="list-group list group-flush">
+                                    <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">1.</span>
+                                    <img src="../Here We Go/rankings/clubs/barca.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Pedri
+                                    </li>
+                                    <!-- player end -->
+                                     <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">2.</span>
+                                    <img src="../Here We Go/rankings/clubs/real.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Federico Valverde
+                                    </li>
+                                    <!-- player end -->
+                                     <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">3.</span>
+                                    <img src="../Here We Go/rankings/clubs/leverkusen.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Florian Wirtz
+                                    </li>
+                                    <!-- player end -->
+                                     <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">4.</span>
+                                    <img src="../Here We Go/rankings/clubs/inter.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Nicolò Barella
+                                    </li>
+                                    <!-- player end -->
+                                     <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">5.</span>
+                                    <img src="../Here We Go/rankings/clubs/psg.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    João Neves
+                                    </li>
+                                    <!-- player end -->   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- midfield ends -->
+                     <!-- Defence Begins -->
+                      <div class="carousel-item">
+                        <div class="card mx-auto bg-secondary text-white" style="width:22rem;">
+                            <div class="card-body">
+                                <h5 class="card-title txt-center">Top 5 Defenders</h5>
+                                <ul class="list-group list group-flush">
+                                    <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">1.</span>
+                                    <img src="../Here We Go/rankings/clubs/liverpool.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Virgil van Dijk
+                                    </li>
+                                    <!-- player end -->
+                                     <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">2.</span>
+                                    <img src="../Here We Go/rankings/clubs/inter.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Alessandro Bastoni
+                                    </li>
+                                    <!-- player end -->
+                                     <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">3.</span>
+                                    <img src="../Here We Go/rankings/clubs/Arsenal.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    William Saliba
+                                    </li>
+                                    <!-- player end -->
+                                     <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">4.</span>
+                                    <img src="../Here We Go/rankings/clubs/barca.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Pau Cubarsí
+                                    </li>
+                                    <!-- player end -->
+                                     <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">5.</span>
+                                    <img src="../Here We Go/rankings/clubs/psg.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Willian Joel Pacho
+                                    </li>
+                                    <!-- player end -->   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                      <!-- Defence Ends -->
+<!-- GoalKeeper Begins -->
+                    <div class="carousel-item">
+                        <div class="card mx-auto bg-secondary text-white" style="width:22rem;">
+                            <div class="card-body">
+                                <h5 class="card-title txt-center">Top 5 Goal Keepers</h5>
+                                <ul class="list-group list group-flush">
+                                    <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">1.</span>
+                                    <img src="../Here We Go/rankings/clubs/real.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Thibaut Courtois
+                                    </li>
+                                    <!-- player end -->
+                                     <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">2.</span>
+                                    <img src="../Here We Go/rankings/clubs/psg.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Gianluigi Donnarumma
+                                    </li>
+                                    <!-- player end -->
+                                     <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">3.</span>
+                                    <img src="../Here We Go/rankings/clubs/inter.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Yann Sommer
+                                    </li>
+                                    <!-- player end -->
+                                     <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">4.</span>
+                                    <img src="../Here We Go/rankings/clubs/bayern.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Manuel Peter Neuer
+                                    </li>
+                                    <!-- player end -->
+                                     <!-- player start -->
+                                    <li class="list-group-item bg-secondary text-white d-flex align-items-center">
+                                    <span class="me-3 fw-bold">5.</span>
+                                    <img src="../Here We Go/rankings/clubs/barca.png" width="40" height="40" class="me-3 rounded-circle" alt="PSG">
+                                    Wojciech Szczęsny
+                                    </li>
+                                    <!-- player end -->   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+ <!-- Goal Keeper ends -->
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#rankingCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#rankingCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+                    <span class="visually-hidden">Next</span>   
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py bg-black text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4-md-0">
+                    <img src="./romano2.jpg" alt="Fabrizio Romano" class="img-fluid rounded-circle" width="200" height="200">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="mb-3">About Me</h2>
+                    <p> Ciao! I'm Fabrizio Romano, a football journalist born in Naples, Italy, on February 21, 1993. I’ve always been passionate about the beautiful game, and I turned that passion into a career in football transfer reporting.</p>
+                    <p> My journey started in 2009, and things really took off when I broke the news about Mauro Icardi's move from Barcelona. Since then, I’ve worked with Sky Sport Italy, The Guardian, and CBS Sports, sharing reliable transfer news with fans across the world.</p>
+                    <p> You might know me for my catchphrase — <strong>"Here we go!"</strong> — which I use to confirm transfer deals. It’s become a global signal that something big is happening in football.</p>
+                    <p> I’m grateful to have been recognized with awards like Best Football Journalist at the Globe Soccer Awards, and I was even named in Forbes’ 30 Under 30 in media and marketing. I speak Italian, English, Spanish, and Portuguese to stay connected with sources and fans around the world.</p>
+                    <p> Outside of journalism, I'm also a big fan of Watford FC. Thank you for following my work and joining me on this amazing football journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<script>
+    
+if (!localStorage.getItem("isLoggedIn")) {
+  window.location.href = "login.html";
+}
+
+    function logout() {
+    sessionStorage.removeItem("LoggedIn");
+    window.location.href = "./login.html";
+}
+  // index.js or inside <script> in index.html
+if (localStorage.getItem("isLoggedIn") !== "true") {
+  window.location.href = "login.html";
+}
+// Prevent going back to login page
+window.addEventListener("pageshow", function (event) {
+  if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
+    if (!localStorage.getItem("isLoggedIn")) {
+      window.location.href = "login.html";
+    }
+  }
+});
+
+
+
+
+</script>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>

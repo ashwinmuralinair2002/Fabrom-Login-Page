@@ -1,0 +1,27 @@
+/* scroll smoothness */
+html{
+    scroll-behavior: smooth;
+}
+/* header and logo */
+body{
+    background-color: gray;
+}
+.site-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width:100%;
+}
+.logo{
+    width:150px;
+    align-items: center;
+
+}
+/* navbar */
+.navbar-black{
+    background-color: black;
+}
+.nav-link{
+    color: white;
+}
